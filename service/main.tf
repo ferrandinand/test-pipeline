@@ -1,9 +1,6 @@
-provider "aws" {}
-
 module "my_rds_instance" {
   source = "github.com/terraform-community-modules/tf_aws_rds"
 
-  //RDS Instance Inputs
   rds_instance_name = "${var.rds_instance_name}"
   rds_allocated_storage = "${var.rds_allocated_storage}"
   rds_engine_type = "${var.rds_engine_type}"
@@ -14,7 +11,7 @@ module "my_rds_instance" {
   database_password = "${var.database_password}"
   rds_security_group_id = "${var.rds_security_group_id}"
   db_parameter_group = "${var.db_parameter_group}"
-  
+
   subnet_az1 = "${var.subnet_az1}"
   subnet_az2 = "${var.subnet_az2}"
   aws_access_key = "${var.aws_access_key}"
