@@ -45,10 +45,3 @@ variable "subnet_az1" {
 variable "subnet_az2" {
  default = "subnet-ba7dc4f3"
 }
-variable "aws_access_key" {}
-
-variable "aws_secret_key" {}
-
-variable "aws_region" {
-  default = "us-east-1"
-}
