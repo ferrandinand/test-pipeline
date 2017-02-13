@@ -1,7 +1,7 @@
 provider "aws" {}
 
 module "my_rds_instance" {
-  source = "github.com/terraform-community-modules/tf_aws_rds"
+  source = "github.com/ferrandinand/tf_aws_rds"
 
   rds_instance_name = "${var.rds_instance_name}"
   rds_allocated_storage = "${var.rds_allocated_storage}"
