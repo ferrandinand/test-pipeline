@@ -1,3 +1,5 @@
+provider "aws" {}
+
 module "my_rds_instance" {
   source = "github.com/terraform-community-modules/tf_aws_rds"
 
@@ -14,7 +16,4 @@ module "my_rds_instance" {
 
   subnet_az1 = "${var.subnet_az1}"
   subnet_az2 = "${var.subnet_az2}"
-  aws_access_key = "${var.aws_access_key}"
-  aws_secret_key = "${var.aws_secret_key}"
-  aws_region = "us-east-1"
 }
